@@ -1,0 +1,33 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+section a {
+    color:red;
+}
+
+section a:hover[href="paslaugos.html"] {
+    background-color: aquamarine;
+}
+
+section a:hover{
+    background-color: blue;
+    border-radius: 20px;
+    border-color: black;
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+}
+
+.links {
+    width: 90%;
+    max-width: 120%;
+    background-color:white;
+    text-align: center;
+    border: 5px;
+    border-width: 20px;
+    border-color: black;
+}
