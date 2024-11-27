@@ -1,3 +1,33 @@
+:root{
+    --background-color: #ffffff; 
+    --text-color: #000000;      
+    --primary-color: #007bff;  
+    --border-color: #dddddd;
+    --hover-color:  #e7e7e7;
+
+
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+      
+    button {
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: 1px solid var(--border-color);
+    }
+
+}
+
+.dark-mode {
+    --background-color: #121212; 
+    --text-color: #ffffff;      
+    --primary-color: #bb86fc;   
+    --border-color: #333333;
+    --hover-color: #333333;
+
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: large;
@@ -6,17 +36,12 @@ body {
 }
 
 section a {
-    color:red;
-}
-
-section a:hover[href="paslaugos.html"] {
-    background-color: aquamarine;
+    color: var(--primary-color);
 }
 
 section a:hover{
-    background-color: blue;
+    background-color:var(--hover-color);
     border-radius: 20px;
-    border-color: black;
     padding: 10px;
     padding-top: 1px;
     padding-bottom: 3px;
@@ -25,7 +50,6 @@ section a:hover{
 .links {
     width: 90%;
     max-width: 120%;
-    background-color:white;
     text-align: center;
     border: 5px;
     border-width: 20px;

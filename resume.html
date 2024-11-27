@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML Page</title>
 </head>
-<section>
-    <div>
-        <a href="index.html"><b>Home</b></a>
-    </div>
-    <div>
-        <a href="about.html"><b>About</b></a>
-    </div>
-    <div>
-        <a href="portfolio.html"><b>Portfolio</b></a>
-    </div>
-    <div>
-        <a href="paslaugos.html"><b>Paslaugos</b></a>
-    </div>
-</section>
+<div class="links">
+    <section>
+        <div>
+            <a href="index.html"><b>Home</b></a>
+        </div>
+        <div>
+            <a href="about.html"><b>About</b></a>
+        </div>
+        <div>
+            <a href="portfolio.html"><b>Portfolio</b></a>
+        </div>
+        <div>
+            <a href="paslaugos.html"><b>Paslaugos</b></a>
+        </div>
+    </section>
+</div>    
 <body>
     <section>
         <div>
-            <h1>Welcome to My Page</h1>
-            <p>This is portfolio.</p>
+            <h1>Welcome to my page!</h1>
+            <p>This is my CV.</p>
         </div>
     </section>
 
@@ -38,5 +41,14 @@
             <p>-CD Project red intern 2023-2024</p>
         </div>
     </section>
+    
+   
+    <section>
+        <div>
+            <button id="dark-mode-toggle"> Dark Mode</button>
+        </div>
+    </section>
+    <script src="darkmode.js"></script>
+
 </body>
 </html>

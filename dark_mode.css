@@ -1,0 +1,26 @@
+:root{
+    --background-color: #ffffff; /* Light background */
+    --text-color: #000000;      /* Dark text */
+    --primary-color: #007bff;   /* Primary color for links/buttons */
+    --border-color: #dddddd;    /* Light border */
+
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+      
+    button {
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: 1px solid var(--border-color);
+    }
+
+}
+
+.dark-mode {
+    --background-color: #121212; /* Dark background */
+    --text-color: #ffffff;      /* Light text */
+    --primary-color: #bb86fc;   /* Accent color */
+    --border-color: #333333;    /* Dark border */
+  }
+  
