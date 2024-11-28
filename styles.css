@@ -1,8 +1,8 @@
 :root{
     --background-color: #ffffff; 
     --text-color: #000000;      
-    --primary-color: #007bff;  
-    --border-color: #dddddd;
+    --primary-color: #af8e6f;  
+    --border-color: #fafafa;
     --hover-color:  #e7e7e7;
 
 
@@ -15,6 +15,10 @@
         background-color: var(--primary-color);
         color: var(--background-color);
         border: 1px solid var(--border-color);
+    }
+
+    button:hover {
+        transform: scale(1.2);
     }
 
 }
@@ -35,23 +39,68 @@ body {
     line-height: 1.5;
 }
 
-section a {
+
+.logo img {
+    height: 50px;  
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
     color: var(--primary-color);
+    transform: scale(1.2);
 }
 
-section a:hover{
-    background-color:var(--hover-color);
-    border-radius: 20px;
-    padding: 10px;
-    padding-top: 1px;
-    padding-bottom: 3px;
+.fade-in-image {
+    animation: fadeIn 3s;
 }
 
-.links {
-    width: 90%;
-    max-width: 120%;
-    text-align: center;
-    border: 5px;
-    border-width: 20px;
-    border-color: black;
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);   
+    gap: 10px;  
+    max-width: 100%;
+    margin: 20px; 
+}
+
+
+.grid-container img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
