@@ -8,22 +8,20 @@
 </head>
 <body>
 
-    <div class = "links">
-        <section>
-            <div>
-                <a href="index.html"><b>Home</b></a>
-            </div>
-            <div>
-                <a href="about.html"><b>About</b></a>
-            </div>
-            <div>
-                <a href="resume.html"><b>Resume</b></a>
-            </div>
-            <div>
-                <a href="portfolio.html"><b>Portfolio</b></a>
-            </div>
-        </section>
-    </div>
+    <header>
+        <div class="logo">
+            <img src="files/logo.png" alt="Logo" />
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="about.html"><b>About</b></a></li>
+                <li><a href="portfolio.html"><b>Portfolio</b></a></li>
+                <li><a href="resume.html"><b>Resume</b></a></li>
+                <li><a href="paslaugos.html"><b>Paslaugos</b></a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section>
         <div>
@@ -38,12 +36,13 @@
                 <iframe 
                     width="560" 
                     height="315" 
-                    src="https://www.youtube.com/embed/__mV9str0rw" 
+                    src="https://www.youtube.com/embed/gsPgvxmdgMk" 
                     title="YouTube video player" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
+
             </div>
         </section>
 
@@ -51,7 +50,7 @@
         <div>
             <h2>Local Video Playback</h2>
             <video controls style="max-width: 100%; height: auto;">
-                <source src="videoplayback.mp4" type="video/mp4">
+                <source src="files/videoplayback.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -61,12 +60,13 @@
         <div>
             <h2>Audio Section</h2>
             <audio controls>
-                <source src="music.mp3" type="audio/mpeg">
+                <source src="files/music.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
     </section>
 
+    <div class="footer">Domantas @2024</div>
 
 </body>
 </html>
