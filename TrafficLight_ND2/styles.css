@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.lights-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+.traffic-light, .pedestrian-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 240px;
+    margin: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.light {
+    width: 70%;
+    height: 25%;
+    border-radius: 50%;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.yellow {
+    background-color: #FFEB3B;
+}
+
+.red {
+    background-color: #F44336;
+}
+
+.off {
+    background-color: #333;
+}
+
+.pedestrian-light {
+    width: 100px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.pedestrian-light .light {
+    width: 80%;
+    height: 45%;
+    margin: 10px auto;
+}
+
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#traffic-status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7d;
+}

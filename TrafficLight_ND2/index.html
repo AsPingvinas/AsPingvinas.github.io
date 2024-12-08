@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Simulation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+    <div class="traffic-light" id="car-light">
+        <div class="light" id="car-light-green"></div>
+        <div class="light off" id="car-light-yellow"></div>
+        <div class="light off" id="car-light-red"></div>
+    </div>
+
+    <div class="pedestrian-light" id="pedestrian-light">
+        <div class="light red" id="pedestrian-light-red"></div> <!-- Red light should be on initially -->
+        <div class="light off" id="pedestrian-light-green"></div> <!-- Green light should be off initially -->
+    </div>
+
+    <button onclick="changeLights()">Press to Change Lights</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
